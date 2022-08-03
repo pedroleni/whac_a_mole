@@ -95,6 +95,9 @@ function tiempoRest() {
         ///MOSTAR EN PANTALLA LA PUNTUACION 
         alert("GAME OVER! Puntuación: " + result);
         tiempoRestante = 60;
+        result = 0;
+        puntuacion.textContent = result
+        
     }
 }
 
@@ -106,6 +109,7 @@ function tiempoRest() {
 let cuentaAtrasId;
 
 function Game() {
+    result=0
     //INTERVALOS DE 1 SEGUNDO
     cuentaAtrasId = setInterval(tiempoRest, 1000);
     moverMole();
