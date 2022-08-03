@@ -94,6 +94,7 @@ function tiempoRest() {
         document.getElementById('btnIniciar').style.display = "block";
         ///MOSTAR EN PANTALLA LA PUNTUACION 
         alert("GAME OVER! Puntuación: " + result);
+        tiempoRestante = 60;
     }
 }
 
